@@ -6,16 +6,17 @@ public class RomanNumeral {
         int position = arabic;
         String result = "";
 
-        if (arabic == 10){
-            result = "X";
-        } else{
-            while(position-- > 0){
-                result += "I";
+        if (arabic == 20) {
+            result = "XX";
+        } else {
+            if (arabic == 10) {
+                result = "X";
+            } else {
+                while (position-- > 0) {
+                    result += "I";
+                }
             }
         }
-
-
         return result;
     }
-
 }
