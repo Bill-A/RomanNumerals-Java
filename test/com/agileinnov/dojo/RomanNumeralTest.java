@@ -57,4 +57,14 @@ public class RomanNumeralTest {
         Assert.assertEquals("XXVI", com.agileinnov.dojo.RomanNumeral.of(26));
     }
 
+    @Test
+    public void returnsMCMXCIXwhenGiven1999() {
+        Assert.assertEquals("MCMXCIX", com.agileinnov.dojo.RomanNumeral.of(1999));
+    }
+
+    @Test
+    public void returnsMCMLVIIwhenGiven1957() {
+        Assert.assertEquals("MCMLVII", com.agileinnov.dojo.RomanNumeral.of(1957));
+    }
+
 }
