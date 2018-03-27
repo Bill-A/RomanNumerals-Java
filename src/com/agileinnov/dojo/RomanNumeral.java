@@ -6,9 +6,14 @@ public class RomanNumeral {
         int position = arabic;
         String result = "";
 
-        while(position-- > 0){
-            result += "I";
+        if (arabic == 10){
+            result = "X";
+        } else{
+            while(position-- > 0){
+                result += "I";
+            }
         }
+
 
         return result;
     }

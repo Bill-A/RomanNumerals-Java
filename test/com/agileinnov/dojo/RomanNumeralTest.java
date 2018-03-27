@@ -20,4 +20,9 @@ public class RomanNumeralTest {
         Assert.assertEquals("III", com.agileinnov.dojo.RomanNumeral.of(3));
     }
 
+    @Test
+    public void returnsXwhenGiven10() {
+        Assert.assertEquals("X", com.agileinnov.dojo.RomanNumeral.of(10));
+    }
+
 }
