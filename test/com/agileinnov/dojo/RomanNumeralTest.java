@@ -24,7 +24,7 @@ public class RomanNumeralTest {
     public void returnsIVwhenGiven4() {
         Assert.assertEquals("IV", com.agileinnov.dojo.RomanNumeral.of(4));
     }
-    
+
     @Test
     public void returnsVwhenGiven5() {
         Assert.assertEquals("V", com.agileinnov.dojo.RomanNumeral.of(5));
@@ -48,6 +48,13 @@ public class RomanNumeralTest {
     @Test
     public void returnsXXIIIwhenGiven23() {
         Assert.assertEquals("XXIII", com.agileinnov.dojo.RomanNumeral.of(23));
+    }
+
+    @Test
+    public void testSupportFor20s() {
+        Assert.assertEquals("XXIV", com.agileinnov.dojo.RomanNumeral.of(24));
+        Assert.assertEquals("XXV", com.agileinnov.dojo.RomanNumeral.of(25));
+        Assert.assertEquals("XXVI", com.agileinnov.dojo.RomanNumeral.of(26));
     }
 
 }
