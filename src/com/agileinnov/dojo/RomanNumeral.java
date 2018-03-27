@@ -2,18 +2,17 @@ package com.agileinnov.dojo;
 
 public class RomanNumeral {
 
+     static int[] ARABIC_VALUES = { 10, 1 };
+     static String[] ROMAN_VALUES = { "X", "I" };
+
     public static String of(int arabic) {
-        int position = arabic;
         String result = "";
 
-        while (position >= 10) {
-            result += "X";
-            position -= 10;
-        }
-
-        while (position > 0) {
-            result += "I";
-            position -= 1;
+        for (int position = 0; position < ARABIC_VALUES.length; position++) {
+            while (arabic >= ARABIC_VALUES[position]) {
+                result += ROMAN_VALUES[position];
+                arabic -= ARABIC_VALUES[position];
+            }
         }
 
         return result;

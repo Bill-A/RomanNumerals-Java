@@ -30,4 +30,14 @@ public class RomanNumeralTest {
         Assert.assertEquals("XX", com.agileinnov.dojo.RomanNumeral.of(20));
     }
 
+    @Test
+    public void returnsXXXwhenGiven30() {
+        Assert.assertEquals("XXX", com.agileinnov.dojo.RomanNumeral.of(30));
+    }
+
+    //@Test
+    //public void returnsXXIIIwhenGiven23() {
+    //    Assert.assertEquals("XXIII", com.agileinnov.dojo.RomanNumeral.of(23));
+    //}
+
 }
