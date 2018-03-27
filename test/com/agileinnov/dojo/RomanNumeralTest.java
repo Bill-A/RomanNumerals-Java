@@ -21,6 +21,11 @@ public class RomanNumeralTest {
     }
 
     @Test
+    public void returnsVwhenGiven5() {
+        Assert.assertEquals("V", com.agileinnov.dojo.RomanNumeral.of(5));
+    }
+
+    @Test
     public void returnsXwhenGiven10() {
         Assert.assertEquals("X", com.agileinnov.dojo.RomanNumeral.of(10));
     }
@@ -35,9 +40,9 @@ public class RomanNumeralTest {
         Assert.assertEquals("XXX", com.agileinnov.dojo.RomanNumeral.of(30));
     }
 
-    //@Test
-    //public void returnsXXIIIwhenGiven23() {
-    //    Assert.assertEquals("XXIII", com.agileinnov.dojo.RomanNumeral.of(23));
-    //}
+    @Test
+    public void returnsXXIIIwhenGiven23() {
+        Assert.assertEquals("XXIII", com.agileinnov.dojo.RomanNumeral.of(23));
+    }
 
 }
