@@ -2,8 +2,8 @@ package com.agileinnov.dojo;
 
 public class RomanNumeral {
 
-     static int[] ARABIC_VALUES = { 10, 5, 1 };
-     static String[] ROMAN_VALUES = { "X", "V", "I" };
+     static int[] ARABIC_VALUES   = {  10,   5,    4,  1  };
+     static String[] ROMAN_VALUES = { "X", "V", "IV", "I" };
 
     public static String of(int arabic) {
         String result = "";
