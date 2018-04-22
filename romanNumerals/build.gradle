@@ -1,5 +1,5 @@
 group 'romanNumeralsKata'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 apply plugin: 'java'
 
@@ -7,8 +7,29 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+sourceSets {
+    main {
+        java {
+//            srcDir 'src/com/agileinnov/dojo'
+            srcDir 'src/main/java'
+        }
+    }
+    test {
+        java {
+//            srcDir 'test/com/agileinnov/dojo'
+            srcDir 'test/main/java'
+        }
+    }
+}
+
+
+test {
+    reports.html.enabled = true
 }
