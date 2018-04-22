@@ -17,14 +17,14 @@ dependencies {
 sourceSets {
     main {
         java {
-//            srcDir 'src/com/agileinnov/dojo'
-            srcDir 'src/main/java'
+            srcDir 'src/com/agileinnov/dojo'
+//            srcDir 'src/main/java'
         }
     }
     test {
         java {
-//            srcDir 'test/com/agileinnov/dojo'
-            srcDir 'test/main/java'
+            srcDir 'test/com/agileinnov/dojo'
+//            srcDir 'test/main/java'
         }
     }
 }
